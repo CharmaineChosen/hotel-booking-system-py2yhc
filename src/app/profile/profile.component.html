@@ -1,0 +1,37 @@
+
+<p> Personal information </p>
+
+
+
+
+
+
+<div class="row m-1">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Personal Information</h5>
+        <p class="card-text">Room Type :  {{   this.apiService.getRoomType() }}</p>
+        <p class="card-text">Room Number :  {{   this.apiService.getRoomNo() }}  </p>
+        <p class="card-text">CheckIn Date :  {{   this.apiService.getCheckInDate() }}</p>
+        <p class="card-text">CheckOut  Date :  {{   this.apiService.getCheckOutDate() }}</p>
+        <a href="#" class="btn btn-primary">Update Personal Information</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Bank Information</h5>
+        <p class="card-text">Bank Name :  {{   this.apiService.getBankName() }}</p>
+        <p class="card-text">Account Number :  {{   this.apiService.getAccountNo() }}</p>
+        <p class="card-text">Expiery Date : {{   this.apiService.getExiperyDate() }}</p>
+        <p class="card-text">CVV :  {{   this.apiService.getcvv() }}</p>
+        <a href="#" class="btn btn-primary">Update Bank Information </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

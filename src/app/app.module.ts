@@ -16,6 +16,7 @@ import { Page1Component } from './page1/page1.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceScriptService } from './service-script.service';
 
+
 @NgModule({
     imports: [
         BrowserModule,

@@ -15,6 +15,7 @@ import { RoomsComponent } from './rooms/rooms.component';
 import { Page1Component } from './page1/page1.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceScriptService } from './service-script.service';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ServiceScriptService } from './service-script.service';
         RoomsComponent,
         Page1Component,
         ProfileComponent,
+        AboutComponent,
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

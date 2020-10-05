@@ -4,7 +4,7 @@
   <form [formGroup]="detailsForm" (ngSubmit)="onSubmit()">
 
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="col-25">
       <label for="inputEmail4">Room Type</label>
       <select class="custom-select mr-sm-2" formControlName="RoomType">
         <option selected>Choose...</option>
@@ -13,7 +13,7 @@
         <option value="Deluxe">Deluxe </option>
          </select>
     </div>
-    <div class="form-group col-md-6">
+    <div class="col-25">
       <label for="inputPassword4">Room Number</label>
       <select class="custom-select mr-sm-2" formControlName="RoomNo">
         <option selected>Choose...</option>
@@ -23,20 +23,20 @@
          </select>
     </div>
   </div>
-  <div class="form-group">
+  <div class="col-25">
     <label for="inputAddress">Check In</label>
     <input type="date" class="form-control" formControlName="CheckInDate"  >
   </div>
-  <div class="form-group">
+  <div class="col-25">
     <label for="inputAddress2">Check Out</label>
     <input type="date" class="form-control"formControlName="CheckOutDate" >
   </div>
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="col-25">
       <label for="inputCity">Bank Name</label>
       <input type="text" class="form-control" formControlName="BankName" placeholder="Bank Name">
     </div>
-    <div class="form-group col-md-4">
+    <div class="col-25">
       <label for="inputState">Account Number</label>
        <input type="text" class="form-control" formControlName="AccountNo" 
         placeholder="Account No"  required>
@@ -47,7 +47,7 @@
       <input type="text" class="form-control" formControlName="cvv" placeholder="cvv" min="3" max="3">
     </div>
   </div>
-    <div class="form-group">
+    <div class="col-25">
     <label for="inputAddress2">Exipery Date </label>
     <input type="date" class="form-control"formControlName="ExiperyDate" >
   </div>
@@ -59,6 +59,7 @@
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" routerLink="/page1" routerLinkActive="active">Submit</button>
+  
   </form>
 </div>

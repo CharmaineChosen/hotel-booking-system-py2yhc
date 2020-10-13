@@ -6,6 +6,8 @@ import { AuthGuard } from './_helpers';
 
 import { ProfileComponent } from './profile/profile.component';
 import {Page1Component} from './page1/page1.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const accountModule = () => import('./account/account.module').then(x => x.AccountModule);
@@ -17,6 +19,8 @@ const routes: Routes = [
     { path: 'account', loadChildren: accountModule },
     {path: 'page1',component: Page1Component},
     {path: 'profile',component: ProfileComponent},
+    { path: 'about',component: AboutComponent },
+    { path: 'contact',component: ContactComponent },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];

@@ -16,6 +16,8 @@ import { Page1Component } from './page1/page1.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceScriptService } from './service-script.service';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactService } from './contact.service';
 
 
 @NgModule({
@@ -33,6 +35,7 @@ import { AboutComponent } from './about/about.component';
         Page1Component,
         ProfileComponent,
         AboutComponent,
+        ContactComponent,
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
@@ -41,7 +44,9 @@ import { AboutComponent } from './about/about.component';
         // provider used to create fake backend
         fakeBackendProvider,
 
-        ServiceScriptService
+        ServiceScriptService,
+
+        ContactService
     ],
     bootstrap: [AppComponent]
 })
